@@ -3,7 +3,7 @@
 class anonymUser {
     protected $shoppingKart;
     protected $card;
-    protected $name;
+    protected $name;    
 
     function __construct($shoppingKart, $card, $name){
         $this->shoppingKart = $shoppingKart;

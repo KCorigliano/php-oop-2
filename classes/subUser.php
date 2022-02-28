@@ -9,10 +9,10 @@ class subUser extends anonymUser{
     protected $email;
     protected $age;
     protected $subscribed = true;
-    protected $sale;
+    protected $sale = 20;
 
-    function __construct($email, $age, $shoppingKart, $card,  $subscribed){
-        parent::__construct($shoppingKart, $card, $subscribed);
+    function __construct($email, $age, $shoppingKart, $card,  $subscribed, $name){
+        parent::__construct($shoppingKart, $card, $subscribed, $name);
         $this->email = $email;
         $this->age = $age;
         $this->subscribed = $subscribed;
@@ -25,8 +25,9 @@ class subUser extends anonymUser{
     {
         return $this->subscribed;
     }
+
 }
 
-$subscribedUser = new subUser( "aiuyfg@ghiw.com", 25, [$ossoCani, $croccantini], 156354, true);
+$subscribedUser = new subUser( "aiuyfg@ghiw.com", 25, [$ossoCani, $croccantini], 156354, true, "Piero");
 
 var_dump($subscribedUser);
