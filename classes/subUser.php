@@ -4,6 +4,7 @@ require_once __DIR__ . "/user.php";
 require_once __DIR__ . "/game.php";
 require_once __DIR__ . "/product.php";
 require_once __DIR__ . "/food.php";
+require_once __DIR__ . "/dogBed.php";
 
 class subUser extends anonymUser{
     protected $email;
@@ -28,6 +29,6 @@ class subUser extends anonymUser{
 
 }
 
-$subscribedUser = new subUser( "aiuyfg@ghiw.com", 25, [$ossoCani, $croccantini], 156354, true, "Piero");
+$Piero = new subUser( "aiuyfg@ghiw.com", 25, [$ossoCani, $croccantini, $clothBed], 156354, true, "Piero");
 
-var_dump($subscribedUser);
+var_dump($Piero);
