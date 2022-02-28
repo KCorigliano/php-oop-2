@@ -1,22 +1,14 @@
 <?php
 
 class anonymUser {
-    protected $email;
     protected $shoppingKart;
-    protected $card; 
+    protected $card;
+    protected $name;
 
-    function __construct($email, $shoppingKart, $card)
-    {
-        $this->email = $email;
+    function __construct($shoppingKart, $card, $name){
         $this->shoppingKart = $shoppingKart;
         $this->card = $card;
-    }
-    /**
-     * Get the value of email
-     */ 
-    public function getEmail()
-    {
-        return $this->email;
+        $this->name = $name;
     }
 
     /**
